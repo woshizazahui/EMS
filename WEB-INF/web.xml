@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>emsmanager</display-name>
+  <welcome-file-list>
+    <welcome-file>ems/user/login.jsp</welcome-file>
+  </welcome-file-list>
+ <servlet>
+ 	<servlet-name>LoginServlet</servlet-name>
+ 	<servlet-class>servlet.LoginServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>LoginServlet</servlet-name>
+ 	<url-pattern>/servlet/LoginServlet</url-pattern>
+ </servlet-mapping>
+ <servlet>
+ 	<servlet-name>RegistServlet</servlet-name>
+ 	<servlet-class>servlet.RegistServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>RegistServlet</servlet-name>
+ 	<url-pattern>/servlet/RegistServlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>AddEmpServlet</servlet-name>
+ 	<servlet-class>servlet.AddEmpServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>AddEmpServlet</servlet-name>
+ 	<url-pattern>/servlet/AddEmpServlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>DelEmpServlet</servlet-name>
+ 	<servlet-class>servlet.DelEmpServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>DelEmpServlet</servlet-name>
+ 	<url-pattern>/servlet/DelEmpServlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>UpdEmpServlet</servlet-name>
+ 	<servlet-class>servlet.UpdEmpServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>UpdEmpServlet</servlet-name>
+ 	<url-pattern>/servlet/UpdEmpServlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>SubmitUpdEmpServlet</servlet-name>
+ 	<servlet-class>servlet.SubmitUpdEmpServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>SubmitUpdEmpServlet</servlet-name>
+ 	<url-pattern>/servlet/SubmitUpdEmpServlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>DelDeptServlet</servlet-name>
+ 	<servlet-class>servlet.DelDeptServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>DelDeptServlet</servlet-name>
+ 	<url-pattern>/servlet/DelDeptServlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>AddDeptServlet</servlet-name>
+ 	<servlet-class>servlet.AddDeptServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>AddDeptServlet</servlet-name>
+ 	<url-pattern>/servlet/AddDeptServlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>UpdDeptServlet</servlet-name>
+ 	<servlet-class>servlet.UpdDeptServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>UpdDeptServlet</servlet-name>
+ 	<url-pattern>/servlet/UpdDeptServlet</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+ 	<servlet-name>SubmitUpdDeptServlet</servlet-name>
+ 	<servlet-class>servlet.SubmitUpdDeptServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>SubmitUpdDeptServlet</servlet-name>
+ 	<url-pattern>/servlet/SubmitUpdDeptServlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>DrawImage</servlet-name>
+ 	<servlet-class>servlet.DrawImage</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>DrawImage</servlet-name>
+ 	<url-pattern>/servlet/DrawImage</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>RandomCodeIdentifyServlet</servlet-name>
+ 	<servlet-class>servlet.RandomCodeIdentifyServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>RandomCodeIdentifyServlet</servlet-name>
+ 	<url-pattern>/servlet/RandomCodeIdentifyServlet</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+ 
+ 
+ <filter>
+    <filter-name>struts</filter-name>
+    <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>struts</filter-name>
+    <url-pattern>/main/a</url-pattern>
+  </filter-mapping> 
+</web-app>
